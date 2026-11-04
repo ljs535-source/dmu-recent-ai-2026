@@ -1,0 +1,23 @@
+# 10주차 실습 패키지 — RAG (1) 적재 · 분할 · 임베딩
+# 🔶 버전은 학기 시작 시점의 안정 버전으로 확정해 고정 배포할 것
+
+langchain
+langchain-core
+langchain-community
+langchain-ollama
+langchain-text-splitters
+python-dotenv
+langsmith
+
+# ★ 이번 주 새로 설치하는 것 — Loader 4종 (실습 1)
+pypdf                 # PDF Loader
+beautifulsoup4        # Web Loader
+
+# ★ 실습 2·3 — 인덱스를 만들어 저장합니다 (11주차에 그대로 이어 씀)
+faiss-cpu
+numpy
+
+# 🔶 (선택) HuggingFace 임베딩 경로 — PyTorch 가 함께 딸려옵니다.
+#    ⚠️ 실습 3 은 15분뿐이라 수업 중 설치하면 시간이 남지 않습니다.
+#       미설치라면 Ollama 경로만으로 진행하고 코드 예시로만 보여주십시오. ★
+# sentence-transformers

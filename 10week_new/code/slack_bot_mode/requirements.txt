@@ -1,0 +1,5 @@
+# 10주차 슬랙 RAG 봇 — 10주차 패키지 + 9주차 슬랙 봇 패키지
+-r ../requirements.txt
+
+slack_bolt            # 9주차 3교시 — Socket Mode 봇
+langchain-openai      # openai 로 물을 때만 필요 (Ollama 만 쓰면 없어도 됨)
