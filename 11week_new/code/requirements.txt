@@ -1,0 +1,18 @@
+# 11주차 실습 패키지 — RAG (2) 벡터 저장소 · 검색 전략
+
+langchain
+langchain-core
+langchain-community   # FAISS · BM25Retriever (10주차에서 이어 씀)
+langchain-classic     # ★ MultiQuery · Ensemble · ContextualCompression · ParentDocument 검색기
+langchain-ollama
+langchain-text-splitters
+python-dotenv
+langsmith
+faiss-cpu             # 10주차 인덱스를 읽습니다
+numpy
+
+# ★ 이번 주 새로 설치하는 것
+langchain-chroma      # 1교시 — Chroma 저장소 · metadata 필터
+chromadb
+rank_bm25             # 2교시 — 하이브리드 검색(BM25)
+                      # 💡 순수 파이썬 CPU 라이브러리라 VRAM 을 쓰지 않습니다.
