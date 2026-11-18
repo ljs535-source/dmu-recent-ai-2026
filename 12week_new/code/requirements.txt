@@ -1,0 +1,16 @@
+# 12주차 실습 패키지 — LangGraph (1) 상태 그래프 · 분기 · 순환
+
+langchain
+langchain-core
+langchain-ollama
+python-dotenv
+pydantic
+langsmith
+
+# ★ 이번 주 새로 설치하는 것
+langgraph             # StateGraph · 조건부 엣지 · recursion_limit
+grandalf              # 실습 4 — draw_ascii() 에 필요합니다 (없으면 ImportError, Mermaid 는 없어도 됩니다)
+
+# 미니 프로젝트 연결(rag_router_graph.py) — 10주차 인덱스를 읽습니다 (10·11주차에 이미 설치)
+langchain-community
+faiss-cpu

@@ -1,0 +1,16 @@
+# 14주차 실습 패키지 — LangGraph (3) 멀티 에이전트 · 스트리밍 · 서비스화
+
+langchain-core
+langchain-ollama
+langchain-community   # FAISS — 10주차 인덱스를 읽습니다
+faiss-cpu
+python-dotenv
+pydantic
+langsmith
+langgraph             # 12·13주차와 같음
+
+# ★ 이번 주 새로 설치하는 것 — 실습 3 (langgraph dev + Studio)
+#   ⚠️ 설치하면 protobuf · grpcio 버전이 바뀔 수 있습니다 (chromadb 를 쓰는 11주차와 충돌 가능).
+#      걱정되면 이 줄만 별도 가상환경에 설치하세요 — README «실습 3» 참고.
+langgraph-cli[inmem]
+colorama              # ⚠️ Windows 에서 없으면 langgraph dev 가 시작하자마자 SystemError 로 멈춥니다

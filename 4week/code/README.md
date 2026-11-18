@@ -32,6 +32,7 @@
 > venv 생성 · 2~3주차 패키지 설치를 자동으로 하고, 이후 할 명령(VS Code · Git 복구 · `.env`)을 화면에 출력합니다.
 > 자세한 내용은 1교시 PPT 2·3장 · 배포 1교시 0절.
 > Git Bash 를 쓴다면 같은 일을 하는 `setup_env.sh` 를 Git Bash 에서 `bash setup_env.sh` 로 실행합니다.
+> (추가) `setup_env.sh` 의 받기 · 질문별 답 · 끝난 뒤 할 일 · 오류 대처는 [**`setup_env_README.md`**](setup_env_README.md) 에 정리했습니다.
 > (2026-09-14 추가) 두 스크립트는 프로젝트 폴더에 `.gitignore` 도 만들어 둡니다(이미 있으면 그대로). 3주차 저장소를 `git pull` 로 되살릴 때는 그 파일이 있으면 `pull` 이 멈춥니다.
 > (2026-09-22 수정) **지우지 말고 옮깁니다** — `Rename-Item .gitignore .gitignore.bak`(Git Bash: `mv .gitignore .gitignore.bak`) → `git pull` → 성공하면 `.bak` 삭제, **실패하면 되돌리기**. 화면 안내 [4-A] 에 있습니다.
 > 지웠다가 `pull` 이 실패하면 `.gitignore` 없이 남고, 그 상태의 `git add .` 은 `.env`(공용 키)와 `venv/`(실측 8,822개 파일)를 스테이징합니다.

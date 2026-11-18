@@ -34,6 +34,26 @@
 # 실제 학교 문서(학칙 PDF)는 올리지 않는다 — 학생은 학교 규정집 링크에서 받는다 (README 사전 준비)
 /10week_new/code/data/학칙.pdf
 
+# 11주차 재구성본(11week_new)도 같은 방식으로 code 폴더까지만 열어준다.
+!/11week_new/
+/11week_new/*
+!/11week_new/code/
+# vector_stores.py 가 실행할 때마다 새로 만드는 Chroma 폴더 — 올리지 않는다
+/11week_new/code/chroma_db/
+
+# 12·13·14주차 재구성본도 같은 방식으로 code 폴더까지만 열어준다.
+!/12week_new/
+/12week_new/*
+!/12week_new/code/
+!/13week_new/
+/13week_new/*
+!/13week_new/code/
+!/14week_new/
+/14week_new/*
+!/14week_new/code/
+# langgraph dev 가 실행할 때마다 만드는 로컬 서버 저장 폴더 — 올리지 않는다
+/14week_new/code/.langgraph_api/
+
 # -------------------------------------------------------------
 # 3단계) code 폴더 안이라도 올리면 안 되는 것들 (위 예외보다 우선)
 # -------------------------------------------------------------

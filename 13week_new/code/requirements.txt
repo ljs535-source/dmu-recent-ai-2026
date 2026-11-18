@@ -1,0 +1,15 @@
+# 13주차 실습 패키지 — LangGraph (2) 에이전트 · 메모리 · 사람의 개입
+
+langchain             # create_agent (사전 구축 에이전트)
+langchain-core
+langchain-community   # FAISS (10주차 인덱스를 읽습니다)
+langchain-ollama
+python-dotenv
+pydantic
+langsmith
+langgraph             # StateGraph · ToolNode · InMemorySaver · interrupt · Command
+faiss-cpu             # 실습 4 (Agentic RAG) — 10주차 인덱스
+tzdata                # Windows 에서 get_time 도구의 시간대(Asia/Seoul) 정보
+
+# 상용 API — 루트 .env 에 TOOL_MODEL=gpt-4o-mini 를 적을 때 (공용 키로 3교시 비교)
+langchain-openai

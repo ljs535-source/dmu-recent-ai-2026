@@ -143,8 +143,8 @@ A 고정 · B 재귀 · C 구조 세 인덱스에 똑같이 던집니다. **2교
 | 항목 | 비중 | 시점 |
 |---|---|---|
 | **명세 문서의 충실도** | **2%** | **10주차** |
-| 구현 완성도 | 4% | 14주차 |
-| 문서화 품질 (README) | 2% | 14주차 |
+| 구현 완성도 | 5% | 14주차 |
+| 문서화 품질 (README) | 3% | 14주차 |
 
 - 템플릿: [`project_template/README.md`](project_template/README.md) · [`project_template/CONTEXT.md`](project_template/CONTEXT.md)
 - 필수 요건
