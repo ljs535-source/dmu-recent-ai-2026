@@ -152,6 +152,7 @@ Studio UI 주소를 브라우저로 엽니다(LangSmith 로그인 화면이 나�
   ⚠️ `chat_update` 는 노드 단위(수 초에 한 번)로만 — 토큰마다 고치면 슬랙 rate limit 에 걸립니다.
 - **피드백** — 답할 때 `run_id = uuid.uuid4()` 를 정해 `invoke(..., {"run_id": run_id})` 로 넘기고, 답 메시지에 달린 👍/👎 반응을 `create_feedback(run_id, …)` 으로 붙일 수 있습니다.
 - **최종 제출** — 코드 · `README.md`(10주차 템플릿 6항목) · **LangSmith 추적 캡처(필수, 무료 보존 14일)**. 학칙.pdf 는 공개 저장소에 올리지 마세요.
+  → **(변경 11-25)** 기준 코드는 `13week_new/code/slack_bot/`(RAG 기본 · MCP 도구 1개 이상 권장 — 넣지 않으면 `--no-mcp`). LangSmith 캡처는 요건에서 빠졌고, README 7번 테스트표 + 캡처 3종(`--show` · 터미널 · 슬랙)을 냅니다 — `배포/[14주차]학생용_미니프로젝트_최종제출_안내.md` «0절».
 
 ## 꼭 이해해야 할 지점
 

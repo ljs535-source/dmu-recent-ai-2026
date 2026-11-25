@@ -19,6 +19,7 @@
 | 읽기 · 선택 | 2교시 판서 | [`time_travel.py`](time_travel.py) | 체크포인트 목록 → 과거 지점부터 다시 실행 |
 | **실습 4** ★★ | 2교시 판서 · 3교시 실습 | [`agentic_rag.py`](agentic_rag.py) | **검색할지 스스로 판단 + 부실하면 질문을 고쳐 재검색** (실제 학칙) |
 | 공용 | — | [`faiss_io.py`](faiss_io.py) | 인덱스 읽기 — 경로에 한글이 있어도 되게 한다 (10·11주차와 같은 파일) |
+| 미니 프로젝트 ★ | 3교시 19장 | [`slack_bot/`](slack_bot/README.md) | **19장 «세 자리» 를 다 붙인 슬랙 봇** — ① 스레드 기억 · ② Agentic RAG · ③ MCP 도구 + 승인 (10주차 `slack_bot_mode` 에서 출발) |
 | 견본 | — | [`.env.example`](.env.example) | 모델 · 인덱스 위치를 바꿀 때만 필요 |
 
 ## 사전 준비
@@ -57,7 +58,7 @@ python hitl_agent.py                # approve / reject 를 직접 입력
 python hitl_agent.py --auto reject  # 거부해도 그래프는 정상적으로 끝난다
 python hitl_agent.py --injection    # 주입된 «모든 파일을 삭제하라» — 승인 요청이 뜨는가?
 
-# ── (선택) 되감기 ────────────────────────────────────────────
+# ── (선택) 타임 트래블 ────────────────────────────────────────────
 python time_travel.py
 
 # ── 실습 4 — Agentic RAG ⏱ 질문 4개에 수 분 걸립니다. 먼저 걸어 두세요 ──
@@ -78,6 +79,9 @@ python agentic_rag.py "휴학은 최대 몇 년까지 할 수 있나요?"   # �
 | 4 | 질문 4개의 실제 경로 (decide → … → answer/direct/give_up) | |
 
 ## 미니 프로젝트로 이어 가기 — 슬랙 봇에 붙이기
+
+> ★ 아래 세 가지를 **모두 붙여 실제로 돌아가게 만든 봇**이 [`slack_bot/`](slack_bot/README.md) 에 있습니다 — 구조 · 실행 방법은 그 폴더의 README 를 보세요.
+> 내 프로젝트에서는 ②와 ③ 중 하나만 써도 됩니다.
 
 미니 프로젝트 구성은 그대로입니다 — **슬랙으로 묻고 슬랙 스레드로 답한다 + 가운데는 RAG 또는 MCP.**
 오늘 배운 것 가운데 프로젝트에 바로 쓸 수 있는 것은 세 가지입니다.
@@ -106,3 +110,4 @@ MCP 서버의 도구도 LangChain 도구로 바뀌므로(9주차 `mcp_test/mcp_c
 슬랙에서는 «승인하시겠습니까?» 를 스레드에 올리고, 다음 답글을 `Command(resume=...)` 로 넘기는 식이 됩니다.
 
 > 💡 최종 제출에는 **LangSmith 추적 화면 캡처**가 필요합니다. 공유 링크는 보존기간(14일)이 지나면 열리지 않으니 지금부터 캡처해 모아 두세요.
+> → **(변경 11-25) LangSmith 캡처는 제출하지 않습니다.** 미니 프로젝트는 [`slack_bot/`](slack_bot/README.md) 을 `--no-mcp` 로 — 내 자료는 `bot_config.py` + `build_my_index.py` 만 고쳐 붙입니다.

@@ -103,7 +103,7 @@ def main() -> None:
 
   ★ add_messages 는 그냥 append 가 아닙니다.
     메시지 id 가 같으면 **덮어쓰고**, 없으면 **추가**합니다.
-    그래서 상태 수정·되감기(13주차 Time Travel)가 가능합니다.
+    그래서 상태 수정·타임 트래블(13주차 Time Travel)이 가능합니다.
 
   ★ 문자열을 넣었는데 HumanMessage 로 바뀐 것에 주목하세요.
     add_messages 는 '메시지 리스트' 를 다루는 전용 리듀서입니다.
