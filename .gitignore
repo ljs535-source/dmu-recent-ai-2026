@@ -51,6 +51,8 @@
 !/14week_new/
 /14week_new/*
 !/14week_new/code/
+# slack_bot 의 MCP 메모 도구가 실행할 때 만드는 메모 파일 — 수업 시연 메모가 올라가지 않게
+/13week_new/code/slack_bot/notes.json
 # langgraph dev 가 실행할 때마다 만드는 로컬 서버 저장 폴더 — 올리지 않는다
 /14week_new/code/.langgraph_api/
 
