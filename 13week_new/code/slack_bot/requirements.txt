@@ -1,0 +1,7 @@
+# 13주차 미니 프로젝트 슬랙 봇 — 13주차 패키지 + 슬랙 · MCP · PDF
+-r ../requirements.txt
+
+slack_bolt                 # 9 · 10주차 — Socket Mode 봇
+langchain[mcp]             # 9주차 MCP — langchain.mcp.MCPAdapter (fastmcp 가 함께 설치됩니다)
+pypdf                      # build_index.py — 학칙.pdf 를 다시 읽을 때만 (index_pdf/ 는 이미 들어 있음)
+langchain-text-splitters   # build_index.py — 분할
